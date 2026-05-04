@@ -1,15 +1,19 @@
-# ExploreSaudi - Software Engineering Project
-A comprehensive web platform designed to explore Saudi Arabia, built as part of the Software Engineering (SWE1) course.
+# ExploreSaudi - Advanced Web Platform
+A high-performance full-stack web application developed to facilitate tourism in Saudi Arabia. This project demonstrates advanced integration skills and professional software engineering practices.
 
-## 🚀 Technologies Used:
-* **Backend:** Java
-* **Frontend:** JavaScript, HTML5, CSS3
-* **Process:** Scrum Methodology & Agile Development
+## 🌟 Advanced Integrations:
+* **Backend & Database:** Powered by **Firebase** for real-time data management and user authentication.
+* **External APIs:** Successfully integrated with **Hotel Booking APIs** to fetch real-time data and availability.
+* **Architecture:** Built using Java, JavaScript, and modern web standards (HTML5/CSS3).
 
-## 🛠 Key Features:
-* Dynamic user interface with responsive design.
-* Full CRUD operations (Backend integration).
-* Project managed using Scrum (Product Backlog, Sprints).
+## 🛠 Engineering Process:
+* **Agile/Scrum:** Managed via strict Scrum cycles, including sprint planning and backlog grooming (Refer to the attached Scrum Excel).
+* **UI/UX:** Focused on a responsive and user-centric design for the tourism sector.
 
-## 📄 Project Assets:
-Included in this repository is the **Project Presentation** and the **Scrum Management Excel** which details our development lifecycle and task distribution.
+## 📁 Repository Structure:
+* `/src`: Full source code (Java/JS).
+* `Presentation.pdf`: Detailed project walkthrough and architecture diagrams.
+* `Scrum-Management.xlsx`: Evidence of professional Agile workflow.
+
+## 🚧 Current Status:
+This project was completed as part of the SWE1 curriculum with an emphasis on scalable architecture and third-party service integration.
