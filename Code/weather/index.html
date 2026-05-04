@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <!-- FontAwesome for icons -->
+  <link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet">
+
+  <!-- Boxicons for icons -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather</h1>
+      <div class="search-box">
+        <input type="text" id="city_input" placeholder="Enter city name">
+        <button id="searchBtn"><i class="fa fa-search"></i> Search</button>
+        <button id="locationBtn"><i class="bx bx-target-lock"></i> Current Location</button>
+      </div>
+    </header>
+
+    <!-- Main Weather Section -->
+    <section class="weather-section">
+      <!-- Current Weather -->
+      <div class="current-weather">
+        <h3>Now</h3>
+        <div class="weather-info">
+          <h1 class="temperature">--°C</h1>
+          <i class="fa fa-cloud"></i>
+          <div class="additional-info">
+            <p class="date">--</p>
+            <p class="location">--</p>
+          </div>
+          <p class="humidity">--%</p>
+          <p class="pressure">-- hPa</p>
+          <p class="wind-speed">-- m/s</p>
+          <p class="visibility">-- km</p>
+        </div>
+      </div>
+
+      <!-- 5 Days Forecast -->
+      <div class="forecast">
+        <h3>5 Days Forecast</h3>
+        <div class="forecast-list">
+          <!-- Forecast data will be injected here -->
+        </div>
+      </div>
+
+      <!-- Today's Highlights -->
+      <div class="highlights">
+        <h3>Today's Highlights</h3>
+        <div class="highlight-cards">
+          <div class="highlight">
+            <h4>Air Quality Index</h4>
+            <p>CO: <span class="co">--</span></p>
+            <p>PM2.5: <span class="pm25">--</span></p>
+            <p>PM10: <span class="pm10">--</span></p>
+            <p>NO2: <span class="no2">--</span></p>
+            <p>O3: <span class="o3">--</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <!-- Your existing CSS and links here -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Style for the Go Back button */
+    .btn-home {
+      padding: 10px 20px;
+      background-color: #FF7E5F;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-home:hover {
+      background-color: #FF967D;
+      transform: translateY(-2px);
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Your existing weather app content goes here -->
+
+  <!-- Go Back to Home Button at the bottom -->
+  <div class="button-container">
+    <a href="../homepage.html" class="btn-home">Go back to Home</a>
+  </div>
+  
+  <!-- Your existing scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
+

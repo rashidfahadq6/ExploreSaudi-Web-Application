@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Manage Your Account</h1>
+
+    <!-- Form to update name -->
+    <div>
+      <label for="newName">Update Name:</label>
+      <input type="text" id="newName" placeholder="Enter new name">
+      <button id="updateNameBtn">Update Name</button>
+    </div>
+
+    <!-- Form to upload profile picture -->
+    <div>
+      <label for="profilePicUpload">Upload Profile Picture:</label>
+      <input type="file" id="profilePicUpload" accept="image/*">
+      <button id="uploadPicBtn">Upload Picture</button>
+    </div>
+
+    <button id="saveChangesBtn">Save Changes</button>
+  </div>
+
+  <script type="module" src="user-management.js"></script>
+</body>
+</html>

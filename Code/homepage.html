@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+    <title>Explore Saudi</title>
+
+    <style>
+      /* Styling for orange buttons */
+      .btn, .nav-button, .btn-search {
+        padding: 10px 20px;
+        background-color: #C7923E; /* Warm orange */
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn:hover, .nav-button:hover, .btn-search:hover {
+        background-color: #d6a465; /* Lighter orange on hover */
+        transform: translateY(-2px);
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #fff;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .menu {
+        display: flex;
+        gap: 10px;
+      }
+
+      .logo {
+        height: 50px;
+      }
+
+      .profile img {
+        height: 50px;
+      }
+
+      /* Weather Button */
+      .weather-button-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      /* Search Bar */
+      .search-bar {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .search-bar input[type="text"] {
+        padding: 10px;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        width: 200px;
+      }
+
+      .btn-search {
+        background-color: #C7923E;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        border: none;
+      }
+
+      .btn-search:hover {
+        background-color: #d6a465;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img src="img/rectangle-1.png" alt="Logo" class="logo" />
+        <div class="menu">
+          <a href="homepage.html" class="nav-button">Home</a>
+          <a href="about.html" class="nav-button">About</a>
+          <a href="destination.html" class="nav-button">Destination</a>
+          <a href="Contact.html" class="nav-button">Contact Us</a>
+        </div>
+
+        <button class="nav-button" onclick="window.location.href='login/index.html'">Sign In / Log In</button>
+        <div class="profile">
+          <img id="profilePic" src="default-profile.png" alt="Profile Picture" class="profile-pic" style="display:none;" />
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-bar">
+          <input type="text" placeholder="Search activities or destinations" />
+          <button class="btn-search">Search</button>
+        </div>
+      </nav>
+
+      <!-- Weather Button -->
+      <div class="weather-button-container">
+        <a href="weather/index.html" class="btn-weather">See the weather for your trip</a>
+      </div>
+    </header>
+
+    <style>
+      /* Styling for the weather button */
+      .btn-weather {
+        padding: 10px 20px;
+        background-color: #C7923E; /* Updated to your desired orange */
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    
+      .btn-weather:hover {
+        background-color: #d6a465; /* Slightly lighter orange on hover */
+        transform: translateY(-2px);
+      }
+    </style>
+    
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-text">
+          <h1></h1>
+          <p></p>
+        </div>
+      </section>
+
+      <!-- Packages Section -->
+      <section class="packages">
+        <article class="package">
+          <img src="img/image-placeholder-1.png" alt="KAFD" />
+          <h2>King Abdullah Financial District (KAFD)</h2>
+          <p>
+            Discover the ultra-modern KAFD, Riyadh’s hub for business, finance, and innovation.
+          </p>
+          <button class="btn" onclick="window.location.href='kafd.html'">Learn More</button>
+          <button class="btn package-btn" onclick="window.location.href='booking.html'">Book Now</button>
+        </article>
+
+        <article class="package">
+          <img src="img/The-Red-Sea-Project/ritz-6-1934x1088.png" alt="The Red Sea Project" />
+          <h2>The Red Sea Project</h2>
+          <p>
+            Explore the pristine Red Sea coast, home to luxury resorts and breathtaking natural landscapes.
+          </p>
+          <button class="btn" onclick="window.location.href='red-sea-project.html'">Learn More</button>
+          <button class="btn package-btn" onclick="window.location.href='booking.html'">Book Now</button>
+        </article>  
+
+        <article class="package">
+          <img src="img/image-placeholder-3.png" alt="Al-Ula" />
+          <h2>Al-Ula (Mada’in Saleh)</h2>
+          <p>
+            Explore the stunning landscapes and ancient history of Al-Ula, home to UNESCO World Heritage site Hegra.
+          </p>
+          <button class="btn" onclick="window.location.href='al-ula.html'">Learn More</button>
+          <button class="btn package-btn" onclick="window.location.href='booking.html'">Book Now</button>
+        </article>
+      </section>
+
+      <!-- Destinations Section -->
+      <section class="destinations">
+        <h2>Learn Your Destination</h2>
+        <p>Know more about the best destinations for your travel.</p>
+        <div class="destination-list">
+          <div class="destination">
+            <img src="img/image-placeholder-7.png" alt="Riyadh" />
+            <h3>Riyadh</h3>
+            <p>
+              The capital of Saudi Arabia, Riyadh, is a bustling metropolis combining modern skyscrapers with rich history.
+            </p>
+          </div>
+          <div class="destination">
+            <img src="img/image-placeholder-8.png" alt="Dammam" />
+            <h3>Dammam</h3>
+            <p>
+              Situated on the Arabian Gulf, Dammam is a key industrial and commercial hub known for its coastal views and markets.
+            </p>
+          </div>
+          <div class="destination">
+            <img src="img/image-placeholder-9.png" alt="Jeddah" />
+            <h3>Jeddah</h3>
+            <p>
+              Jeddah is Saudi Arabia’s gateway to the Red Sea, famous for its historic old town, stunning waterfront, and vibrant culture.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <section class="why-choose-us">
+        <h2>Why Travel with Us?</h2>
+        <div class="benefits">
+          <div class="benefit">
+            <img src="img/caroutlined.svg" alt="Transportation" />
+            <p>We offer a variety of transportation options with special offers.</p>
+          </div>
+          <div class="benefit">
+            <img src="img/checkcircleoutlined.svg" alt="Customer Service" />
+            <p>24/7 customer service to ensure you have the best experience.</p>
+          </div>
+          <div class="benefit">
+            <img src="img/contactsoutlined.svg" alt="Safety" />
+            <p>Your travel plans are safe and easily accessible with us.</p>
+          </div>
+          <div class="benefit">
+            <img src="img/likeoutlined.svg" alt="Affordable Pricing" />
+            <p>Our plans and packages offer the best range of prices to fit everyone.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-info">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to book a tour with us, please don't hesitate to contact us.</p>
+        <ul>
+          <li>Phone: +123-456-7890</li>
+          <li>Email: LordRashids@gmail.com</li>
+          <li>Address: 123 Main St, Riyadh, Saudi Arabia</li>
+        </ul>
+        <form class="newsletter">
+          <label for="email">Subscribe to our newsletter:</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </section>
+    </footer>
+  </body>
+</html>
