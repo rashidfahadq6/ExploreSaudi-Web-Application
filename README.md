@@ -1,19 +1,34 @@
-# ExploreSaudi - Advanced Web Platform
-A high-performance full-stack web application developed to facilitate tourism in Saudi Arabia. This project demonstrates advanced integration skills and professional software engineering practices.
+# Tourist Guide System (ExploreSaudi) 🇸🇦
+A comprehensive all-in-one resource platform for travelers to discover and navigate destinations in Saudi Arabia. This project was developed as part of the **Software Engineering (CS290)** course at Al-Imam Mohammad Ibn Saud Islamic University.
 
-## 🌟 Advanced Integrations:
-* **Backend & Database:** Powered by **Firebase** for real-time data management and user authentication.
-* **External APIs:** Successfully integrated with **Hotel Booking APIs** to fetch real-time data and availability.
-* **Architecture:** Built using Java, JavaScript, and modern web standards (HTML5/CSS3).
+## 👥 Team Members (Section 171):
+* Rashid Al-Qahtani
+* Abdullah Alkhawlani
+* Khalid Al Dosari
+* Mohammed Al-Fayez
 
-## 🛠 Engineering Process:
-* **Agile/Scrum:** Managed via strict Scrum cycles, including sprint planning and backlog grooming (Refer to the attached Scrum Excel).
-* **UI/UX:** Focused on a responsive and user-centric design for the tourism sector.
+## 🚀 Key Features & Capabilities:
+* **Centralized Information Hub:** Detailed insights into historical sites, museums, and natural wonders[cite: 1, 2].
+* **Itinerary Planning:** Tools for creating personalized travel plans based on user preferences and schedules.
+* **Real-time Updates:** Integration of APIs for live updates on weather, events, and transportation schedules[cite: 1, 2].
+* **Secure Booking:** Seamless booking experience for accommodations and transport[cite: 2].
+* **Offline Functionality:** Access to cached maps and saved itineraries without an internet connection[cite: 1].
 
-## 📁 Repository Structure:
-* `/src`: Full source code (Java/JS).
-* `Presentation.pdf`: Detailed project walkthrough and architecture diagrams.
-* `Scrum-Management.xlsx`: Evidence of professional Agile workflow.
+## 🛠 Technical Stack & Architecture:
+* **Frontend:** HTML5, CSS3, JavaScript.
+* **Backend & Database:** Java with **Firebase** integration for real-time data management and user authentication.
+* **Architecture Pattern:** **MVC (Model-View-Controller)** to ensure modularity, scalability, and clean code structure[cite: 1, 2].
+* **External Integrations:** Google Maps API for GPS tracking and various third-party APIs for tourism data[cite: 1].
 
-## 🚧 Current Status:
-This project was completed as part of the SWE1 curriculum with an emphasis on scalable architecture and third-party service integration.
+## 📈 Software Engineering Process:
+* **Methodology:** Followed **Agile/Scrum** practices[cite: 1].
+* **Artifacts:**
+    * **Product & Sprint Backlogs:** Prioritized features (High/Medium/Low) with estimated task times[cite: 1].
+    * **Design Models:** Comprehensive Activity, Use Case, Sequence, and Class Diagrams[cite: 1].
+    * **Testing:** Rigorous test cases for Login, Search, Booking, and Payment modules[cite: 1].
+
+## 📂 Repository Contents:
+* `/src`: Source code for the web application.
+* `Project-Report-Phase1.pdf`: Detailed documentation of requirements and planning[cite: 1].
+* `Project-Presentation.pdf`: Visual walkthrough of the system architecture and features[cite: 2].
+* `Scrum-Management.xlsx`: Sprint tracking and group meeting reports[cite: 1].
